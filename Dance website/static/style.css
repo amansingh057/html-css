@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    margin-right: 71px;
+}
+#logo img{
+    height: 39px;
+    filter: invert(1);
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 13px 31px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    /* font-size: rem; */
+}
+#navbar li a:hover{
+    color: black;
+    text-decoration: none;
+    padding: 13px 31px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+#navbar{
+    background-color: brown;
+    padding: 13px 14px;
+    font-family: 'Style Script', cursive;
+}
+
+#introSection{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: center / cover no-repeat url("/static/bg.jpg");
+    color: rgb(89 107 81);
+    height: 300px;
+    background-color: red;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 67px;
+    padding-bottom: 40px;
+}
+#introSection div.small{
+    font-size: 33px;
+    color: #19adad;
+    font-family: 'Style Script', cursive;
+
+}
+#sponsorsSection{
+    height: 300px;
+    background-color: #bf8d927d;
+}
+
+#sponsorsSection h1{
+    text-align: center;
+    padding-top: 4px;
+    font-family: 'Style Script', cursive;
+    font-size: 38px;
+
+}
+#missionSection h1{
+    text-align: center;
+    padding-top: 4px;
+    font-family: 'Style Script', cursive;
+    font-size: 38px;
+
+}
+#missionSection{
+    height: 300px;
+    width: 61%;
+    margin: auto;
+}
+.card{
+    border: 2px solid red;
+    border-radius: 10px;
+    width: 32%;
+    margin: 10px 6px;
+    height: 200px;
+    display: inline-block;
+    background: #dc2e2e87;
+}
+.card h3{
+    text-align: center;
+    margin: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-content{
+padding: 3px 4px;
+}
+.card-content p{
+font-size: 15px;
+}
+.card-img{
+    height: 101px;
+    padding: 0 22px;
+    margin: 20px -16px;
+}
+.card-img img{
+    height:inherit;
+    /* padding: 0 14px; */
+}
+#sponsors{
+    height: 185px;
+    max-width: 1000px;
+    margin: auto;
+}
+.spImage{
+    height: 80%;
+    margin: 20px;
+}
+#footer{
+    height: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}

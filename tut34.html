@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            /* border: 2px solid black; */
+            margin: 23px 12px;
+            background-color: chocolate;
+            /* BOX SHADOW OFF SET X AND OFF SET Y COLLOR
+             */
+
+            /* box-shadow: 10px 13px green; */
+            /* box-shadow: -10px -13px green; */
+            /* box-shadow: 7px 5px 10px green; */
+            /* box-shadow: 7px 5px 10px 34px rgba(32, 144, 172, 0.5); */
+            /* box-shadow: inset 3px 5px blue; */
+            box-shadow: 3px 5px green, 14px 5px red;
+        }
+        .card h2{
+            /* text-shadow: 3px 2px white; */
+            text-shadow: 3px 2px 6px white; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+           <h2> This is C++ COurse </h2>
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consectetur debitis, asperiores magni voluptatibus sunt? Iusto, cupiditate facilis? Libero omnis earum laborum. Molestiae non, maxime ratione fuga labore nihil beatae.34
+        </p>
+        </div>
+        <div class="card" id="card-2">
+           <h2> This is Html course </h2>
+           <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consectetur debitis, asperiores magni voluptatibus sunt? Iusto, cupiditate facilis? Libero omnis earum laborum. Molestiae non, maxime ratione fuga labore nihil beatae.34
+           </p>
+        </div>
+        <div class="card" id="card-3">
+           <h2> card-3 </h2>
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consectetur debitis, asperiores magni voluptatibus sunt? Iusto, cupiditate facilis? Libero omnis earum laborum. Molestiae non, maxime ratione fuga labore nihil beatae.34
+        </p>
+        </div>
+    </div>
+</body>
+</html>

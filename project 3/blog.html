@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css" integrity="sha512-apX8rFN/KxJW8rniQbkvzrshQ3KvyEH+4szT3Sno5svdr6E/CP0QE862yEeLBMUnCqLko8QaugGkzvWS7uNfFQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle"onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <h1>Our certificate & Online programs for 2021</h1>
+    </section>
+    <!-- --------------blog page content---------- -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="">
+                <h2>Our certificate & Online programs for 2021</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nesciunt quod odit repellat nostrum cumque tenetur, veritatis quo pariatur suscipit voluptatibus sapiente nihil ut necessitatibus beatae error? Consequatur, dolorum pariatur.</p>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius minima pariatur quidem rerum laudantium ad a amet iure adipisci nulla deleniti libero ipsam, dolore voluptates ducimus veniam repellendus aspernatur tempore.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsam obcaecati, a recusandae non delectus asperiores, soluta accusantium debitis aliquid deleniti odio incidunt exercitationem eius mollitia tempora cupiditate eos dicta.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus consectetur repudiandae blanditiis enim reiciendis assumenda, commodi rerum ad impedit repellat. Voluptas voluptatum mollitia harum nemo tempora neque accusantium maiores asperiores.</p>
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="commment-form" action="">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id magnam excepturi a error <br> aperiam. Architecto ex perspiciatis voluptates fugit doloribus?</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram" ></i>
+            <i class="fab fa-linkedin" ></i>
+            <!-- <i class="fa fa-facebook" ></i> -->
+        </div>
+        <p>Made by <i class="far fa-heart"></i> by Aman Singh </p>
+    </section>
+    <!-- -------JavaScript for toggle menu--------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <style>
+        
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: blanchedalmond;
+            background: url('https://source.unsplash.com/random')no-repeat center center/cover;
+        }
+        header::before{
+            content: "";
+            background: url('https://source.unsplash.com/random')no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+            opacity: 0.5;
+        }
+        section{
+            height:344px;
+            /* border: 2px solid red; */
+            margin: 3px 23px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Bad Script', cursive;
+        }
+        /* section::before{
+            content: "this is a contemt";
+        }
+        section::after{
+            content: "this is a contemt";
+        } */
+        .navigation{
+            font-family: 'Bad Script', cursive;
+            display: flex;
+            font-size: 20px;
+
+        }
+        li{
+            list-style: none;
+            padding: 20px 24px;
+        }
+        h3{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">About</li>
+                <li class="item">Home</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+      
+    </header>
+    <section>
+        <h3>Welcome to coding world</h3>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis doloribus repellat consequatur. Sapiente eaque maiores at facere blanditiis doloremque, soluta debitis enim ut est. Ipsa quos corporis, doloremque consequuntur explicabo aut eius dolores dicta.
+    </section>
+    <!-- <hr> -->
+</body>
+</html>
